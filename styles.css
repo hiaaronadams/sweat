@@ -1,0 +1,71 @@
+:root {
+  --sweat-pink: #ff0073;
+  --sweat-white: #fbfbf4;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+
+body {
+  background-color: var(--sweat-pink);
+  color: var(--sweat-white);
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  display: flex;
+  min-height: 100vh;
+}
+
+.hero {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
+}
+
+.hero-inner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 0.5rem;
+}
+
+.mascot-slot {
+  width: 320px;
+  height: 320px;
+  max-width: 70vw;
+  max-height: 40vh;
+  margin-bottom: 1.5rem;
+  /* Drop mascot graphic in as background-image or an <img> inside this slot */
+}
+
+.logo {
+  font-size: clamp(2.5rem, 8vw, 5rem);
+  font-weight: 900;
+  letter-spacing: -0.02em;
+  color: var(--sweat-white);
+  margin: 0;
+  text-transform: uppercase;
+}
+
+.tagline-jp {
+  font-size: 1.25rem;
+  margin: 0.75rem 0 0;
+  color: var(--sweat-white);
+}
+
+.tagline-en {
+  font-size: 0.95rem;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  margin: 0.25rem 0 0;
+  color: var(--sweat-white);
+  opacity: 0.85;
+}
