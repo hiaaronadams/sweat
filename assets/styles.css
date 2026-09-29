@@ -37,22 +37,11 @@ body {
   gap: 0.5rem;
 }
 
-.mascot-slot {
-  width: 320px;
-  height: 320px;
-  max-width: 70vw;
-  max-height: 40vh;
-  margin-bottom: 1.5rem;
-  /* Drop mascot graphic in as background-image or an <img> inside this slot */
-}
-
 .logo {
-  font-size: clamp(2.5rem, 8vw, 5rem);
-  font-weight: 900;
-  letter-spacing: -0.02em;
-  color: var(--sweat-white);
-  margin: 0;
-  text-transform: uppercase;
+  width: 100%;
+  max-width: 450px;
+  height: auto;
+  margin: 0 0 1.5rem;
 }
 
 .tagline-jp {
