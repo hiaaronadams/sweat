@@ -19,12 +19,14 @@ body {
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   display: flex;
   min-height: 100vh;
+  min-height: 100dvh;
 }
 
 .hero {
   flex: 1;
   display: flex;
   align-items: center;
+  align-items: safe center;
   justify-content: center;
   padding: 2rem;
 }
@@ -84,4 +86,23 @@ body {
   margin: 0.25rem 0 0;
   color: var(--sweat-white);
   opacity: 0.85;
+}
+
+@media (max-width: 600px) {
+  .hero {
+    padding: 3rem 1.5rem;
+  }
+
+  .hero-row {
+    gap: 2rem;
+  }
+
+  .mascot {
+    width: 220px;
+    height: 220px;
+  }
+
+  .logo {
+    max-width: 320px;
+  }
 }
